@@ -1,7 +1,9 @@
 // import Parent from "./components/functionalCom/Parent";
 // import Parent from "./components/classCom/Parent";
 
-import Parent from "./Props/Child-Child/Parent";
+import Parent from "./State/Local-State/Parent";
+
+// import Parent from "./Props/Child-Child/Parent";
 
 
 // import Parent from "./Jsx/Parent";
