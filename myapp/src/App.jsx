@@ -1,7 +1,9 @@
 // import Parent from "./components/functionalCom/Parent";
 // import Parent from "./components/classCom/Parent";
 
-import A from "./State/Local-State/A";
+import A from "./State/Global-State/A";
+
+// import A from "./State/Local-State/A";
 
 // import Parent from "./State/Local-State/Parent";
 
@@ -14,6 +16,7 @@ function App() {
   return (
     <div id="myapp">
       {/* <Parent/> */}
+      {/* <A/> */}
       <A/>
     </div>
   );
