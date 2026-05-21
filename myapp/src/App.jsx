@@ -1,7 +1,9 @@
 // import Parent from "./components/functionalCom/Parent";
 // import Parent from "./components/classCom/Parent";
 
-import A from "./State/Global-State/A";
+import A from "./State/Global-State/Redux-Concept/React-Components/A";
+
+// import A from "./State/Global-State/A";
 
 // import A from "./State/Local-State/A";
 
@@ -16,6 +18,7 @@ function App() {
   return (
     <div id="myapp">
       {/* <Parent/> */}
+      {/* <A/> */}
       {/* <A/> */}
       <A/>
     </div>
