@@ -1,14 +1,12 @@
 import React from 'react'
 
 function Child1(props) {
-
   console.log(props)
-
-  var age = 45
+  var data = 'data from child1'
   return (
-    <div>
-      <h3>Child1: age: {age}</h3>
-      <button onClick={()=>props.test(age)}>send data from child1 to parent</button>
+    <div style={{border:"2px solid", margin: "10px", padding:"10px"}}>
+      <h3>Child1</h3>
+      <button onClick={()=> props.test(data)}>send data to parent</button>
     </div>
   )
 }

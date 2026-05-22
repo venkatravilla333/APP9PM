@@ -4,25 +4,28 @@ import Child2 from './Child2'
 
 function Parent() {
 
-  // var data = 100
- var [data, setData] = useState(100)
+  var normalVaribale = 0
+  var [stateVariable, setX] = useState()
 
-  function test(age) {
-    console.log(age)
-    // data = age
-    setData(age)
+function test(data) {
+  console.log(data)
+  setX(data)
+  }
+  
+  function updateNormalVariable() {
+    normalVaribale++
+    console.log(normalVaribale)
   }
 
-  // function changeData() {
-  //   // data = 'kohli'
-  //   // console.log(data)
-  // }
+  
 
   console.log('render')
   return (
     <div>
-      {/* <button onClick={setData}>change data</button> */}
-      <h3>Parent com: {data}</h3>
+      {/* <h3>{normalVaribale}</h3>
+      <button onClick={updateNormalVariable}>update normalVaribale</button> */}
+      <h3 style={{border: "2px solid red", width: "300px", height: "200px"}}>{stateVariable}</h3>
+      {/* <button onClick={()=>setX(stateVariable+1)}>update state Varibale</button> */}
       <Child1 test = {test} />
       <Child2/>
     </div>
