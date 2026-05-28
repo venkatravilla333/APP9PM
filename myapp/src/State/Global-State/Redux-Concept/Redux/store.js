@@ -1,24 +1,17 @@
 
-import { createStore } from 'redux'
+import { createStore, applyMiddleware, combineReducers } from 'redux'
+import { cakeReducer } from './cake/cakereducer'
+import logger from 'redux-logger'
+import { iceCreameReducer } from './iceCreame/iceCreameReducer'
+import {composeWithDevTools} from '@redux-devtools/extension'
 
-//initial state
 
-let initialState = {
-  noOfCakes: 100
-}
+let rootReducer = combineReducers({
+  cake: cakeReducer,
+  iceCreame : iceCreameReducer
+})
 
-function cakeReducer(state = initialState, action) {
-  switch (action.type) {
-    case 'BUY_CAKE':
-      return {
-        noOfCakes: state.noOfCakes - 1
-      }
-      break;
-    default:
-      return state 
-  }
-}
 
-export const store = createStore(cakeReducer)
+export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(logger)))
 console.log(store)
 

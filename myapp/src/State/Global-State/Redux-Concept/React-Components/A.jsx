@@ -7,10 +7,10 @@ import { Provider} from 'react-redux'
 function A() {
   return (
     <div>
-      {/* <Provider store={store}> */}
+      <Provider store={store}>
        <B/>
        <C /> 
-     {/* </Provider> */}
+     </Provider>
     </div>
   )
 }
