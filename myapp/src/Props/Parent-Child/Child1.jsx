@@ -1,9 +1,9 @@
 import React from 'react'
 
 function Child1(props) {
-  console.log(props.name = 'kohli')
+  console.log(props.data = 'sachin')
   return (
-    <div>Child1:  {props.name}</div>
+    <div>Child1: {props.data}</div>
   )
 }
 

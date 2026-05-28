@@ -3,13 +3,12 @@ import Child1 from './Child1'
 import Child2 from './Child2'
 
 function Parent() {
-
-  // var name = 'sachin'
+  //  api call 
+  var data = 'Data from db' //state
 
   return (
     <div>
-      <h3>Parent com</h3>
-      <Child1 name = {'sachin'} />
+      <Child1 data={data} />
       <Child2/>
     </div>
   )

@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+import React from 'react'
+import Parent from './Props/Child-Child/Parent.jsx'
+
+function App() {
+  return (
+    <div>
+      <Parent/>
+=======
 // import Parent from "./components/functionalCom/Parent";
 // import Parent from "./components/classCom/Parent";
 
@@ -21,8 +30,9 @@ function App() {
       {/* <A/> */}
       {/* <A/> */}
       <A/>
+>>>>>>> f391004e3c3f4f141c92f077fab8ac181aea2464
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
