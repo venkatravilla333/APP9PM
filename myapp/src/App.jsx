@@ -1,10 +1,10 @@
 import React from 'react'
-import A from './State/Local-State/use-reducer/A'
+import Child from './Side-Effects/Runs-Only-Once/Child'
 
 function App() {
   return (
     <div>
-      <A/>
+     <Child/>
     </div>
   )
 }

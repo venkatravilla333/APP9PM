@@ -1,6 +1,6 @@
 import React from 'react'
 
-function G() {
+const G = () => {
   return (
     <div>G</div>
   )
