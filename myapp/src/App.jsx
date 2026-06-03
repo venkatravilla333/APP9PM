@@ -1,10 +1,11 @@
 import React from 'react'
-import Child from './Side-Effects/Runs-Only-Once/Child'
+import Container from './Side-Effects/Cleanup-Task/Container'
 
 function App() {
   return (
     <div>
-     <Child/>
+      {/* <Child/> */}
+      <Container/>
     </div>
   )
 }
