@@ -1,11 +1,13 @@
 import React from 'react'
-import Container from './Side-Effects/Cleanup-Task/Container'
+import A from './Async-Data/React-Components/A'
+// import Container from './Side-Effects/Cleanup-Task/Container'
 
 function App() {
   return (
     <div>
       {/* <Child/> */}
-      <Container/>
+      {/* <Container/> */}
+      <A/>
     </div>
   )
 }
